@@ -1,0 +1,28 @@
+{
+  "name": "data",
+  "version": "1.0.0",
+  "description": "friend finder homework",
+  "main": "friends.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a3ngin/friendFinder.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "mysql"
+  ],
+  "author": "anne engin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a3ngin/friendFinder/issues"
+  },
+  "homepage": "https://github.com/a3ngin/friendFinder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  }
+}
