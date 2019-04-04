@@ -31,11 +31,11 @@
             <form>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Name (Required)</label>
-                    <input type="email" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Photo URL (Required)</label>
-                    <input type="password" class="form-control" id="photo" placeholder="Photo URL">
+                    <input type="text" class="form-control" id="photo" placeholder="Photo URL">
                 </div>
             </form>
 
@@ -200,7 +200,6 @@
 
 $("#submit").on("click", function (event){
 
-                if (validateForm()) {
                     var userInput = {
                         name: $("#name").val(),
                         photo: $("#photo").val(),
@@ -218,15 +217,16 @@ $("#submit").on("click", function (event){
                         ]
                     }
 
+                    console.log(userInput)
+
                     $.post("/api/friends", userInput, function (data) {
+                        alert("test")
                         $("#match-name").text(data.name);
                         $("#match-img").attr("src", data.photo);
                         $("#results-modal").modal("toggle");
 
                     });
-                    } else {
-                        alert("Testing.");
-                    }
+                   
                 })
             </script>
 
