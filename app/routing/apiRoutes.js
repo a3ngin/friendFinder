@@ -21,16 +21,12 @@ module.exports = function (app) {
                 match = friends[i];
                 difference = newTotal;
             }
-
-
-            console.log(difference);
-
-            friends.push(addFriend)
-            res.json(match)
-
+            
         
         }
-            
+        friends.push(addFriend)
+        res.json(match)
+
     })
 
 }
